@@ -1,0 +1,6 @@
+CsBaseLanguage
+Copyright 2025 Fumapps
+
+This product includes software from https://github.com/vaclav/mpscs (Apache 2.0)
+ * Copyright 2019 Tomáš Eliáš, Roman Firment, Jakub Saksa, Martin Wirth, Dalibor Zeman; all rights reserved.
+ * Main modifications: keep CsBaseLanguage suitable for use in ALFI transformations.

@@ -1,3 +1,8 @@
+# Fork
+
+This repository is forked from the CsBaseLanguage (https://github.com/vaclav/mpscs).
+We develop/maintain the fork for the tailed use in ALFI transformation chains (https://github.com/vimotest/mps-alfi, https://github.com/vimotest/mps-alfi-to-cs)
+
 # CsBaseLanguage
 
 *CsBaseLanguage* is a project of the C# language implementation as a
