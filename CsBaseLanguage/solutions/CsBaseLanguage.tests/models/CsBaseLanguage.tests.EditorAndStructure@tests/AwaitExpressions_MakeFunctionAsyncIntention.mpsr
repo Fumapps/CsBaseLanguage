@@ -35,7 +35,7 @@
       <concept id="7486903154347131570" name="CsBaseLanguage.structure.Block" flags="ng" index="1ux1M">
         <child id="7486903154347131571" name="statement" index="1ux1N" />
       </concept>
-      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ngI" index="2qBh2l">
+      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ng" index="2qBh2l">
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
       <concept id="3766354144461809103" name="CsBaseLanguage.structure.Async" flags="ng" index="2qGUbG" />
@@ -49,10 +49,10 @@
       <concept id="6365726834708776427" name="CsBaseLanguage.structure.AwaitExpression" flags="ng" index="1BEDWZ">
         <child id="6365726834708776823" name="task" index="1BEDQz" />
       </concept>
-      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
+      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ng" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
-      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
+      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ng" index="3SE3Ww">
         <child id="6209812394072707161" name="iModifier" index="3SE3Wx" />
       </concept>
       <concept id="6843536562191075794" name="CsBaseLanguage.structure.ArgumentsList" flags="ng" index="3UdiBG" />
@@ -85,7 +85,7 @@
             <node concept="1BEDWZ" id="5xnAHh0e60Y" role="2Yz169">
               <node concept="3UdiBM" id="5xnAHh0e60Z" role="1BEDQz">
                 <node concept="1VUwCF" id="5xnAHh0e610" role="3UdiBN">
-                  <ref role="2aT8gA" node="5xnAHh0e60T" resolve="method" />
+                  <ref role="2aT8gA" node="5xnAHh0e60T" />
                 </node>
                 <node concept="3UdiBG" id="5xnAHh0e611" role="3UdiBL" />
               </node>
@@ -111,7 +111,7 @@
             <node concept="1BEDWZ" id="5xnAHh0e6gT" role="2Yz169">
               <node concept="3UdiBM" id="5xnAHh0e6gU" role="1BEDQz">
                 <node concept="1VUwCF" id="5xnAHh0e6gV" role="3UdiBN">
-                  <ref role="2aT8gA" node="5xnAHh0e6gQ" resolve="method" />
+                  <ref role="2aT8gA" node="5xnAHh0e6gQ" />
                 </node>
                 <node concept="3UdiBG" id="5xnAHh0e6gW" role="3UdiBL" />
               </node>
@@ -125,7 +125,7 @@
     </node>
     <node concept="3clFbS" id="5xnAHh0e6s8" role="LjaKd">
       <node concept="1MFPAf" id="5xnAHh0e6s7" role="3cqZAp">
-        <ref role="1MFYO6" to="wux4:5xnAHh09yB3" resolve="MakeMethodAsync" />
+        <ref role="1MFYO6" to="wux4:5xnAHh09yB3" resolve="MakeFunctionAsync" />
       </node>
     </node>
   </node>

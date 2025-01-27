@@ -53,7 +53,7 @@
         <child id="8887560456966189829" name="signature" index="3e4sow" />
         <child id="8887560456966189835" name="body" index="3e4soI" />
       </concept>
-      <concept id="8887560456966189852" name="CsBaseLanguage.structure.IAnonymousFunctionBody" flags="ngI" index="3e4soT" />
+      <concept id="8887560456966189852" name="CsBaseLanguage.structure.IAnonymousFunctionBody" flags="ng" index="3e4soT" />
       <concept id="6843536562190757247" name="CsBaseLanguage.structure.Type" flags="ng" index="3UfwP1">
         <child id="6843536562190767680" name="nonArrayType" index="3UfBpY" />
       </concept>
@@ -84,7 +84,7 @@
         </node>
       </node>
       <node concept="1MFPAf" id="1Y9XkgdGREq" role="3cqZAp">
-        <ref role="1MFYO6" to="wux4:iSyfcv_Xws" resolve="MakeAllImplicit" />
+        <ref role="1MFYO6" to="wux4:iSyfcv_Xws" resolve="MakeImplicit" />
       </node>
     </node>
     <node concept="1qefOq" id="1Y9XkgdGRxH" role="25YQCW">

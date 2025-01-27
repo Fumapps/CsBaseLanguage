@@ -61,7 +61,7 @@
       <concept id="8922781889394254424" name="CsBaseLanguage.structure.NamedArgument" flags="ng" index="6tzi2">
         <reference id="8922781889394256392" name="property" index="6tzNi" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
       <concept id="4106644276571785472" name="CsBaseLanguage.structure.AccessorDeclaration" flags="ng" index="j3B8Q">
@@ -89,10 +89,10 @@
       <concept id="6179718927849393215" name="CsBaseLanguage.structure.AttributeList" flags="ng" index="37Y$Aw">
         <child id="6179718927849393276" name="attributes" index="37Y$Bz" />
       </concept>
-      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
+      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ng" index="3SE3Ww">
         <child id="6209812394072707161" name="iModifier" index="3SE3Wx" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190981614" name="CsBaseLanguage.structure.IntLiteral" flags="ng" index="3UcVBg">
@@ -141,7 +141,7 @@
             <node concept="37Y$Aw" id="AKP4wC3Q7u" role="1ux1g">
               <node concept="31LmC$" id="AKP4wC3Q7v" role="37Y$Bz">
                 <node concept="36R4uQ" id="AKP4wC3Q7w" role="1DcEYZ">
-                  <ref role="2Gaslz" node="AKP4wC3Q7h" resolve="FooAttribute" />
+                  <ref role="2Gaslz" node="AKP4wC3Q7h" />
                   <node concept="LIFWc" id="AKP4wC3Q7x" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -181,7 +181,7 @@
             <node concept="37Y$Aw" id="AKP4wC3Q7J" role="1ux1g">
               <node concept="31LmC$" id="AKP4wC3Q7K" role="37Y$Bz">
                 <node concept="36R4uQ" id="AKP4wC3Q7L" role="1DcEYZ">
-                  <ref role="2Gaslz" node="AKP4wC3Q7$" resolve="FooAttribute" />
+                  <ref role="2Gaslz" node="AKP4wC3Q7$" />
                 </node>
                 <node concept="xJLN9" id="AKP4wCe5tq" role="6Ane7">
                   <node concept="6tz2q" id="6oIHlJhdnZH" role="xJLNb">
@@ -190,7 +190,7 @@
                     </node>
                   </node>
                   <node concept="6tzi2" id="6oIHlJhpyBF" role="xJLNb">
-                    <ref role="6tzNi" node="6oIHlJhdnZ5" resolve="Property" />
+                    <ref role="6tzNi" node="6oIHlJhdnZ5" />
                     <node concept="3UcVBg" id="6oIHlJhpyBL" role="6tzT3">
                       <property role="1pzoAX" value="2" />
                     </node>

@@ -42,7 +42,7 @@
         <child id="7486903154347178702" name="formalParameterList" index="1uUwe" />
         <child id="7486903154347178686" name="body" index="1uUxY" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
       <concept id="7232527154588443414" name="CsBaseLanguage.structure.Statement" flags="ng" index="31KRCQ" />
@@ -72,7 +72,7 @@
     <property role="TrG5h" value="ConstructorDeclaration_AddAttributes" />
     <node concept="3clFbS" id="2KItQQUvGh3" role="LjaKd">
       <node concept="1MFPAf" id="2KItQQUvGh2" role="3cqZAp">
-        <ref role="1MFYO6" to="wux4:7Jk5HDX73PP" resolve="AddAttribute" />
+        <ref role="1MFYO6" to="wux4:7Jk5HDX73PP" resolve="AddAttributes" />
       </node>
     </node>
     <node concept="1qefOq" id="2KItQQUvG8V" role="25YQCW">

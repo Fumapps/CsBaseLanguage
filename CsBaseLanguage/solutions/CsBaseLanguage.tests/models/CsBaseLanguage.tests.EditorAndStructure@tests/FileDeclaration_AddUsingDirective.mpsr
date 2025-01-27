@@ -34,7 +34,7 @@
       <concept id="3126865292757808582" name="CsBaseLanguage.structure.UsingNamespaceDirective" flags="ng" index="2gdQUG">
         <child id="3126865292760098553" name="reference" index="2g4BQj" />
       </concept>
-      <concept id="7232527154588416719" name="CsBaseLanguage.structure.INamespaceMemberDeclaration" flags="ngI" index="31LefJ" />
+      <concept id="7232527154588416719" name="CsBaseLanguage.structure.INamespaceMemberDeclaration" flags="ng" index="31LefJ" />
       <concept id="7232527154588265766" name="CsBaseLanguage.structure.File" flags="ng" index="31LFg6">
         <child id="7232527154588304251" name="namespaceMemberDeclaration" index="31LlDr" />
       </concept>

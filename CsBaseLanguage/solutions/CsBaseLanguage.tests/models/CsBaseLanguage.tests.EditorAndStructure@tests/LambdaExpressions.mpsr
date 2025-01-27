@@ -28,7 +28,7 @@
       <concept id="7232527154588476195" name="CsBaseLanguage.structure.FormalParameter" flags="ng" index="31KZC3">
         <child id="8700838527816343363" name="type" index="2UegB9" />
       </concept>
-      <concept id="8887560457008137085" name="CsBaseLanguage.structure.ICanBeAsync" flags="ngI" index="3c$rpo">
+      <concept id="8887560457008137085" name="CsBaseLanguage.structure.ICanBeAsync" flags="ng" index="3c$rpo">
         <property id="6365726834711276155" name="isAsync" index="otb2J" />
       </concept>
       <concept id="8887560456966202148" name="CsBaseLanguage.structure.LambdaParameterList" flags="ng" index="3e4po1">

@@ -45,7 +45,7 @@
       <concept id="4960876621219057954" name="CsBaseLanguage.structure.ImplicitLocalVariableDeclaration" flags="ng" index="2a_s8y">
         <child id="4960876621219059053" name="variable" index="2a_spH" />
       </concept>
-      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ngI" index="2qBh2l">
+      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ng" index="2qBh2l">
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
       <concept id="7769220957754731518" name="CsBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM">
@@ -85,13 +85,13 @@
       <concept id="6365726834694825977" name="CsBaseLanguage.structure.ImplicitLocalVariableDeclarationStatement" flags="ng" index="1BvVOH">
         <child id="6365726834695689697" name="declaration" index="1BoGWP" />
       </concept>
-      <concept id="6167894786982645659" name="CsBaseLanguage.structure.IGenericTypeList" flags="ngI" index="1FzkKU">
+      <concept id="6167894786982645659" name="CsBaseLanguage.structure.IGenericTypeList" flags="ng" index="1FzkKU">
         <child id="6167894786982659430" name="typeParameter" index="1Fzgr7" />
       </concept>
-      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
+      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ng" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190981614" name="CsBaseLanguage.structure.IntLiteral" flags="ng" index="3UcVBg">
@@ -375,14 +375,14 @@
             <property role="TrG5h" value="t" />
             <node concept="3UfwP1" id="3SS9x79_Lma" role="2UegB9">
               <node concept="3XeaDR" id="3SS9x79_Lmb" role="3UfBpY">
-                <ref role="3XeaDO" node="3SS9x79_Lme" resolve="T" />
+                <ref role="3XeaDO" node="3SS9x79_Lme" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3UfwP1" id="3SS9x79_Lmc" role="3Sw9wT">
           <node concept="3XeaDR" id="3SS9x79_Lmd" role="3UfBpY">
-            <ref role="3XeaDO" node="3SS9x79_Lme" resolve="T" />
+            <ref role="3XeaDO" node="3SS9x79_Lme" />
           </node>
         </node>
         <node concept="31Lcgi" id="3SS9x79_Lme" role="1Fzgr7">

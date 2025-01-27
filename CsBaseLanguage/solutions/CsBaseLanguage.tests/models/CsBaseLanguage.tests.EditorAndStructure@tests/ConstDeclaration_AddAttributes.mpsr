@@ -37,7 +37,7 @@
       <concept id="7486903154347131550" name="CsBaseLanguage.structure.ConstantDeclaratorList" flags="ng" index="1ux1u">
         <child id="7486903154347131551" name="constantDeclarator" index="1ux1v" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
       <concept id="7769220957754731518" name="CsBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM" />
@@ -54,7 +54,7 @@
       <concept id="6179718927849393215" name="CsBaseLanguage.structure.AttributeList" flags="ng" index="37Y$Aw">
         <child id="6179718927849393276" name="attributes" index="37Y$Bz" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190757247" name="CsBaseLanguage.structure.Type" flags="ng" index="3UfwP1">
@@ -98,7 +98,7 @@
     </node>
     <node concept="3clFbS" id="6TvF8nWjoLO" role="LjaKd">
       <node concept="1MFPAf" id="6TvF8nWjoLP" role="3cqZAp">
-        <ref role="1MFYO6" to="wux4:7Jk5HDX73PP" resolve="AddAttribute" />
+        <ref role="1MFYO6" to="wux4:7Jk5HDX73PP" resolve="AddAttributes" />
       </node>
     </node>
     <node concept="1qefOq" id="6TvF8nWjoM0" role="25YQFr">

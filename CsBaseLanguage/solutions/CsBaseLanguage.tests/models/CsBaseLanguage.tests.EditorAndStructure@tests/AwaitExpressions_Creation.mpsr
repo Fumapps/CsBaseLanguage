@@ -33,14 +33,14 @@
       <concept id="7486903154347131570" name="CsBaseLanguage.structure.Block" flags="ng" index="1ux1M">
         <child id="7486903154347131571" name="statement" index="1ux1N" />
       </concept>
-      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ngI" index="2qBh2l">
+      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ng" index="2qBh2l">
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
       <concept id="3766354144461809103" name="CsBaseLanguage.structure.Async" flags="ng" index="2qGUbG" />
       <concept id="1945218857512918966" name="CsBaseLanguage.structure.ExpressionStatement" flags="ng" index="2Yz168">
         <child id="1945218857512918967" name="abstractStatementExpression" index="2Yz169" />
       </concept>
-      <concept id="1945218857512919011" name="CsBaseLanguage.structure.IStatementExpression" flags="ngI" index="2Yz17t" />
+      <concept id="1945218857512919011" name="CsBaseLanguage.structure.IStatementExpression" flags="ng" index="2Yz17t" />
       <concept id="7232527154588443410" name="CsBaseLanguage.structure.MethodDeclaration" flags="ng" index="31KRCM">
         <child id="7232527154588443415" name="body" index="31KRCR" />
       </concept>
@@ -48,10 +48,10 @@
       <concept id="6365726834708776427" name="CsBaseLanguage.structure.AwaitExpression" flags="ng" index="1BEDWZ">
         <child id="6365726834708776823" name="task" index="1BEDQz" />
       </concept>
-      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
+      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ng" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
-      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
+      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ng" index="3SE3Ww">
         <child id="6209812394072707161" name="iModifier" index="3SE3Wx" />
       </concept>
       <concept id="6843536562190726752" name="CsBaseLanguage.structure.UnaryExpression" flags="ng" index="3UfTpu" />

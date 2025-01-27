@@ -34,7 +34,7 @@
       <concept id="7486903154347131535" name="CsBaseLanguage.structure.AttributeSection" flags="ng" index="1ux1f">
         <child id="7486903154347131536" name="attributeList" index="1ux1g" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
       <concept id="7232527154588316420" name="CsBaseLanguage.structure.Attribute" flags="ng" index="31LmC$">
@@ -49,7 +49,7 @@
       <concept id="8914124434097811872" name="CsBaseLanguage.structure.InterfacePropertyDeclaration" flags="ng" index="3xGIlh">
         <child id="292062066074801987" name="accessorDeclaration" index="3gNcI_" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190757247" name="CsBaseLanguage.structure.Type" flags="ng" index="3UfwP1">
@@ -72,7 +72,7 @@
     <property role="3GE5qa" value="editor.Attributes" />
     <node concept="3clFbS" id="2KItQQUvr2K" role="LjaKd">
       <node concept="1MFPAf" id="2KItQQUvr2L" role="3cqZAp">
-        <ref role="1MFYO6" to="wux4:7Jk5HDX73PP" resolve="AddAttribute" />
+        <ref role="1MFYO6" to="wux4:7Jk5HDX73PP" resolve="AddAttributes" />
       </node>
     </node>
     <node concept="1qefOq" id="2KItQQUvr3b" role="25YQCW">

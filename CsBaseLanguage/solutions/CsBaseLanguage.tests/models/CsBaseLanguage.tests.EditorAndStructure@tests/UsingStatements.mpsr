@@ -46,7 +46,7 @@
       <concept id="337056455399801229" name="CsBaseLanguage.structure.LocalVariableDeclaration" flags="ng" index="1LXJq2">
         <child id="337056455399801237" name="variables" index="1LXJqq" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190981614" name="CsBaseLanguage.structure.IntLiteral" flags="ng" index="3UcVBg">
@@ -123,7 +123,7 @@
         </node>
         <node concept="1LSytM" id="iHtKXPO$nR" role="1ux1N">
           <node concept="1VUwCF" id="iHtKXPO$ot" role="1LSHap">
-            <ref role="2aT8gA" node="iHtKXPO$o6" resolve="foo" />
+            <ref role="2aT8gA" node="iHtKXPO$o6" />
           </node>
           <node concept="2Y_LOE" id="iHtKXPO$oq" role="1LSHan" />
         </node>

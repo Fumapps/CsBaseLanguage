@@ -22607,7 +22607,7 @@
         </node>
       </node>
       <node concept="3EZMnI" id="7Jk5HDXYHfS" role="3EZMnx">
-        <ref role="1ERwB7" node="6aIFk8cf7hy" resolve="RemoveTarget" />
+        <ref role="1ERwB7" node="6aIFk8cf7hy" resolve="RemoveAttributeTarget" />
         <node concept="3F1sOY" id="6y6b8L7s01F" role="3EZMnx">
           <ref role="1NtTu8" to="80bi:6aIFk8bTdHj" resolve="target" />
         </node>

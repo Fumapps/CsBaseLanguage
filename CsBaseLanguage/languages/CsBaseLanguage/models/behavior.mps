@@ -2405,7 +2405,7 @@
     <ref role="13h7C2" to="80bi:6hv6i2_Becz" resolve="FormalParameter" />
     <node concept="13i0hz" id="60ZH30$Mgbo" role="13h7CS">
       <property role="TrG5h" value="supportsAttributes" />
-      <ref role="13i0hy" node="60ZH30$MfIa" resolve="attributesEnabled" />
+      <ref role="13i0hy" node="60ZH30$MfIa" resolve="supportsAttributes" />
       <node concept="3Tm1VV" id="60ZH30$Mgbp" role="1B3o_S" />
       <node concept="3clFbS" id="60ZH30$Mgbu" role="3clF47">
         <node concept="3clFbF" id="60ZH30$MgyO" role="3cqZAp">
@@ -2461,7 +2461,7 @@
     </node>
     <node concept="13i0hz" id="60ZH30$MGB0" role="13h7CS">
       <property role="TrG5h" value="supportsAttributes" />
-      <ref role="13i0hy" node="60ZH30$MfIa" resolve="attributesEnabled" />
+      <ref role="13i0hy" node="60ZH30$MfIa" resolve="supportsAttributes" />
       <node concept="3Tm1VV" id="60ZH30$MGB1" role="1B3o_S" />
       <node concept="3clFbS" id="60ZH30$MGB6" role="3clF47">
         <node concept="3clFbF" id="60ZH30$MGTG" role="3cqZAp">

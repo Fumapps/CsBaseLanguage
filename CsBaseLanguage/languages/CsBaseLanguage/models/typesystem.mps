@@ -350,7 +350,7 @@
               <ref role="1YBMHb" node="iSyfcv_hOv" resolve="parameters" />
             </node>
             <node concept="2qgKlT" id="iSyfcv_iZ5" role="2OqNvi">
-              <ref role="37wK5l" to="kvwr:iSyfcvcioP" resolve="isValid" />
+              <ref role="37wK5l" to="kvwr:iSyfcvcioP" resolve="isConsistent" />
             </node>
           </node>
         </node>
