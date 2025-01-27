@@ -3,9 +3,10 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/CsBaseLanguage" />
   <property name="build.layout" location="${build.dir}/artifacts/CsBaseLanguage" />
-  <property name="mps_home" location="" />
+  <property name="project_home" location="${basedir}/.." />
+  <property name="mps_home" location="${project_home}/build/mps-bundle/mps" />
+  <property name="dependencies_home" location="${project_home}/build/mps-bundle/dependencies" />
   <property name="artifacts.mps" location="${mps_home}" />
-  <property name="artifacts.LangDoc" location="${basedir}/../../../../../Library/Application Support/JetBrains/MPS2022.2/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -82,7 +83,6 @@
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
-          <language id="l:a23383a3-9564-4399-8643-72063c6111dc:jetbrains.mps.LangDoc" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
           <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
@@ -141,21 +141,21 @@
     <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CsBaseLanguage" />
       <fileset dir="${basedir}/languages/CsBaseLanguage" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/CsBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CsBaseLanguage.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-CsBaseLanguage-models">
-      <fileset dir="${basedir}/languages/CsBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-languages-CsBaseLanguage-models">
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/CsBaseLanguage/source_gen">
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/CsBaseLanguage/CsBaseLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-CsBaseLanguage-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-languages-CsBaseLanguage-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar/META-INF" />
@@ -181,29 +181,27 @@
     <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.plugin.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CsBaseLanguage.plugin" />
       <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CsBaseLanguage.plugin.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.plugin-models">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.plugin-models">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.plugin-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/CsBaseLanguage.plugin/CsBaseLanguage.plugin.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.plugin-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.plugin-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.build.jar" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/CsBaseLanguage.build.jar/META-INF/module.xml">
       <module namespace="CsBaseLanguage.build" type="solution" uuid="4c997861-1d80-410f-8bda-2feda30a3568">
-        <dependencies>
-          <module ref="6bffa3b0-556a-4592-8452-60ab12ac8190(jetbrains.mps.LangDoc.build)" kind="cl" />
-        </dependencies>
+        <dependencies />
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
           <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
@@ -217,21 +215,21 @@
     <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CsBaseLanguage.build" />
       <fileset dir="${basedir}/solutions/CsBaseLanguage.build" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CsBaseLanguage.build.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.build-models">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.build-models">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.build-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/source_gen">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/CsBaseLanguage.build/CsBaseLanguage.build.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.build-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.zip" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage" />
@@ -279,7 +277,6 @@
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
-          <language id="l:a23383a3-9564-4399-8643-72063c6111dc:jetbrains.mps.LangDoc" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
           <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
@@ -338,21 +335,21 @@
     <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CsBaseLanguage" />
       <fileset dir="${basedir}/languages/CsBaseLanguage" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/CsBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CsBaseLanguage.jar1" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-CsBaseLanguage-models1">
-      <fileset dir="${basedir}/languages/CsBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-languages-CsBaseLanguage-models1">
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/CsBaseLanguage/source_gen">
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/CsBaseLanguage/CsBaseLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-CsBaseLanguage-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-languages-CsBaseLanguage-models1" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar1" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar1/META-INF" />
@@ -378,29 +375,27 @@
     <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.plugin.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CsBaseLanguage.plugin" />
       <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CsBaseLanguage.plugin.jar1" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.plugin-models1">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.plugin-models1">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.plugin-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/CsBaseLanguage.plugin/CsBaseLanguage.plugin.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.plugin-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.plugin-models1" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.build.jar1" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.build.jar1/META-INF" />
     <echoxml file="${build.tmp}/default/CsBaseLanguage.build.jar1/META-INF/module.xml">
       <module namespace="CsBaseLanguage.build" type="solution" uuid="4c997861-1d80-410f-8bda-2feda30a3568">
-        <dependencies>
-          <module ref="6bffa3b0-556a-4592-8452-60ab12ac8190(jetbrains.mps.LangDoc.build)" kind="cl" />
-        </dependencies>
+        <dependencies />
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
           <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
@@ -414,21 +409,21 @@
     <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CsBaseLanguage.build" />
       <fileset dir="${basedir}/solutions/CsBaseLanguage.build" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CsBaseLanguage.build.jar1" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.build-models1">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.build-models1">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.build-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/source_gen">
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/CsBaseLanguage.build/CsBaseLanguage.build.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-CsBaseLanguage.build-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/CsBaseLanguage-solutions-CsBaseLanguage.build-models1" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/CsBaseLanguage.zip">
       <fileset dir="${build.tmp}/default/CsBaseLanguage.zip" />
@@ -463,7 +458,6 @@
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
-      <plugin path="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" id="jetbrains.mps.LangDoc" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <chunk>
@@ -476,7 +470,9 @@
         <arg value="-Xmx512m" />
         <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
+      <macro name="project_home" path="${project_home}" />
       <macro name="mps_home" path="${mps_home}" />
+      <macro name="dependencies_home" path="${dependencies_home}" />
     </generate>
   </target>
   
@@ -485,12 +481,12 @@
   <target name="makeDependents" />
   
   <target name="java.compile.CsBaseLanguage" depends="fetchDependencies">
-    <mkdir dir="${basedir}/languages/CsBaseLanguage/source_gen" />
+    <mkdir dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CsBaseLanguage" />
     <javac destdir="${build.tmp}/java/out/CsBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/CsBaseLanguage/source_gen" />
+        <path location="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -543,17 +539,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/CsBaseLanguage">
-      <fileset dir="${basedir}/languages/CsBaseLanguage/source_gen" excludes="**/*.java" />
+      <fileset dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.CsBaseLanguage.plugin" depends="fetchDependencies">
-    <mkdir dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen" />
+    <mkdir dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CsBaseLanguage.plugin" />
     <javac destdir="${build.tmp}/java/out/CsBaseLanguage.plugin" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/CsBaseLanguage.plugin/source_gen" />
+        <path location="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -597,30 +593,28 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/CsBaseLanguage.plugin">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen" excludes="**/*.java" />
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.CsBaseLanguage.build">
-    <mkdir dir="${basedir}/solutions/CsBaseLanguage.build/source_gen" />
+    <mkdir dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CsBaseLanguage.build" />
     <javac destdir="${build.tmp}/java/out/CsBaseLanguage.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/CsBaseLanguage.build/source_gen" />
+        <path location="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen" />
       </src>
-      <classpath>
-        <fileset file="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc/languages/LangDocContents/jetbrains.mps.LangDoc.build.jar" />
-      </classpath>
+      <classpath />
     </javac>
     <copy todir="${build.tmp}/java/out/CsBaseLanguage.build">
-      <fileset dir="${basedir}/solutions/CsBaseLanguage.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/languages/CsBaseLanguage/source_gen" />
-    <delete dir="${basedir}/solutions/CsBaseLanguage.build/source_gen" />
-    <delete dir="${basedir}/solutions/CsBaseLanguage.plugin/source_gen" />
+    <delete dir="${project_home}/CsBaseLanguage/languages/CsBaseLanguage/source_gen" />
+    <delete dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.build/source_gen" />
+    <delete dir="${project_home}/CsBaseLanguage/solutions/CsBaseLanguage.plugin/source_gen" />
   </target>
 </project>
