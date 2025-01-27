@@ -81,7 +81,6 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
-        <child id="1238980147629899306" name="pluginXml" index="I30fb" />
         <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
@@ -135,11 +134,7 @@
     <node concept="3b7kt6" id="4xDflt7HBly" role="10PD9s" />
     <node concept="398rNT" id="4h_5oU0U7hy" role="1l3spd">
       <property role="TrG5h" value="project_home" />
-      <node concept="55IIr" id="2Yw$_QGki2Q" role="398pKh">
-        <node concept="2Ry0Ak" id="2Yw$_QGki2U" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-        </node>
-      </node>
+      <node concept="55IIr" id="2Yw$_QGki2Q" role="398pKh" />
     </node>
     <node concept="398rNT" id="4h_5oU0U7hv" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
@@ -225,11 +220,6 @@
           <property role="3MwjfP" value="The C# base language for MPS" />
         </node>
       </node>
-      <node concept="55IIr" id="5TaoJM1fqZt" role="I30fb">
-        <node concept="2Ry0Ak" id="5TaoJM1fqZ$" role="iGT6I">
-          <property role="2Ry0Am" value="plugin.xml" />
-        </node>
-      </node>
     </node>
     <node concept="2G$12M" id="4xDflt7HBlN" role="3989C9">
       <property role="TrG5h" value="CsBaseLanguage" />
@@ -267,23 +257,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="6O1PPotBuL8" role="1HemKq">
-            <node concept="398BVA" id="6O1PPotBuKZ" role="3LXTmr">
+          <node concept="3LXTmp" id="6Qw6AndfjWF" role="1HemKq">
+            <node concept="398BVA" id="6Qw6AndfjWz" role="3LXTmr">
               <ref role="398BVh" node="4h_5oU0U7hy" resolve="project_home" />
-              <node concept="2Ry0Ak" id="6O1PPotBuL0" role="iGT6I">
-                <property role="2Ry0Am" value="CsBaseLanguage" />
-                <node concept="2Ry0Ak" id="6O1PPotBuL1" role="2Ry0An">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="6O1PPotBuL2" role="2Ry0An">
-                    <property role="2Ry0Am" value="CsBaseLanguage" />
-                    <node concept="2Ry0Ak" id="6O1PPotBuL3" role="2Ry0An">
-                      <property role="2Ry0Am" value="models" />
-                    </node>
+              <node concept="2Ry0Ak" id="6Qw6AndfjW$" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6Qw6AndfjW_" role="2Ry0An">
+                  <property role="2Ry0Am" value="CsBaseLanguage" />
+                  <node concept="2Ry0Ak" id="6Qw6AndfjWA" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="6O1PPotBuL9" role="3LXTna">
+            <node concept="3qWCbU" id="6Qw6AndfjWG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -328,23 +315,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="6O1PPotBuLj" role="1HemKq">
-            <node concept="398BVA" id="6O1PPotBuLa" role="3LXTmr">
+          <node concept="3LXTmp" id="6Qw6AndfjWP" role="1HemKq">
+            <node concept="398BVA" id="6Qw6AndfjWH" role="3LXTmr">
               <ref role="398BVh" node="4h_5oU0U7hy" resolve="project_home" />
-              <node concept="2Ry0Ak" id="6O1PPotBuLb" role="iGT6I">
-                <property role="2Ry0Am" value="CsBaseLanguage" />
-                <node concept="2Ry0Ak" id="6O1PPotBuLc" role="2Ry0An">
-                  <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="6O1PPotBuLd" role="2Ry0An">
-                    <property role="2Ry0Am" value="CsBaseLanguage.plugin" />
-                    <node concept="2Ry0Ak" id="6O1PPotBuLe" role="2Ry0An">
-                      <property role="2Ry0Am" value="models" />
-                    </node>
+              <node concept="2Ry0Ak" id="6Qw6AndfjWI" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6Qw6AndfjWJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="CsBaseLanguage.plugin" />
+                  <node concept="2Ry0Ak" id="6Qw6AndfjWK" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="6O1PPotBuLk" role="3LXTna">
+            <node concept="3qWCbU" id="6Qw6AndfjWQ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -389,23 +373,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="6O1PPotBuLu" role="1HemKq">
-            <node concept="398BVA" id="6O1PPotBuLl" role="3LXTmr">
+          <node concept="3LXTmp" id="6Qw6AndfjWZ" role="1HemKq">
+            <node concept="398BVA" id="6Qw6AndfjWR" role="3LXTmr">
               <ref role="398BVh" node="4h_5oU0U7hy" resolve="project_home" />
-              <node concept="2Ry0Ak" id="6O1PPotBuLm" role="iGT6I">
-                <property role="2Ry0Am" value="CsBaseLanguage" />
-                <node concept="2Ry0Ak" id="6O1PPotBuLn" role="2Ry0An">
-                  <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="6O1PPotBuLo" role="2Ry0An">
-                    <property role="2Ry0Am" value="CsBaseLanguage.build" />
-                    <node concept="2Ry0Ak" id="6O1PPotBuLp" role="2Ry0An">
-                      <property role="2Ry0Am" value="models" />
-                    </node>
+              <node concept="2Ry0Ak" id="6Qw6AndfjWS" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6Qw6AndfjWT" role="2Ry0An">
+                  <property role="2Ry0Am" value="CsBaseLanguage.build" />
+                  <node concept="2Ry0Ak" id="6Qw6AndfjWU" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="6O1PPotBuLv" role="3LXTna">
+            <node concept="3qWCbU" id="6Qw6AndfjX0" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
