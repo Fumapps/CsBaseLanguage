@@ -126,7 +126,7 @@
   <node concept="1l3spW" id="4xDflt7HBlw">
     <property role="TrG5h" value="CsBaseLanguage" />
     <property role="2DA0ip" value="../../" />
-    <property role="turDy" value="csbl-build.xml" />
+    <property role="turDy" value="build.xml" />
     <node concept="2igEWh" id="2bTQ1KpN$KN" role="1hWBAP">
       <property role="2igJW4" value="true" />
     </node>
@@ -202,7 +202,7 @@
       </node>
       <node concept="3_J27D" id="4xDflt7HBlR" role="m$_w8">
         <node concept="3Mxwew" id="4xDflt7HBlS" role="3MwsjC">
-          <property role="3MwjfP" value="2022.3" />
+          <property role="3MwjfP" value="2024.1.0" />
         </node>
       </node>
       <node concept="m$f5U" id="4xDflt7HBlT" role="m$_yh">
