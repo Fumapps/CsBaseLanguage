@@ -1,0 +1,39 @@
+ext.mpsVersion = "2024.1.1"
+ext.mpsPlugins = [ ]
+ext.customMpsPlugins = [
+    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2024.1-beta3/TextGenGen.zip"
+]
+ext.languageName = "CsBaseLanguage"
+
+apply from: 'gradle/init-gradle-scripts.gradle'
+
+task prepareMps {
+    group 'mps'
+    dependsOn 'buildOsSpecificBundle'
+}
+
+task mpsBuild {
+    group 'mps'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild'
+}
+
+task mpsClean {
+    group 'mps'
+    dependsOn 'mpsAntClean', 'mpsAntCleanSources'
+}
+
+task mpsTest {
+    group 'mps'
+    dependsOn 'mpsAntCheck', 'parseTestReportAfterAntCheck'
+}
+
+task openProjectInMps {
+    group 'mps'
+    dependsOn 'mpsOpenProjectInMpsForCurrentOs'
+}
+
+task buildAndOpenProjectInMps {
+    group 'mps'
+    dependsOn mpsBuild, openProjectInMps
+}
+
