@@ -4645,5 +4645,47 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4$4X$jUDOKl">
+    <property role="EcuMT" value="5261601040799058965" />
+    <property role="TrG5h" value="LegacyCollectionInitializer" />
+    <property role="34LRSv" value="new X&lt;Y&gt; {" />
+    <property role="R4oN_" value="collection initializer" />
+    <property role="3GE5qa" value="Initializers" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4$4X$jUDOKm" role="1TKVEi">
+      <property role="IQ2ns" value="5261601040799058966" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="variableInitializer" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1FYNzU$nG$p" resolve="IVariableInitializer" />
+    </node>
+    <node concept="1TJgyj" id="5xrpOE7tHGd" role="1TKVEi">
+      <property role="IQ2ns" value="6366796068016282381" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="collectionType" />
+      <ref role="20lvS9" node="27q4jmdWYxN" resolve="TypeReference" />
+    </node>
+    <node concept="PrWs8" id="4$4X$jUDOKn" role="PzmwI">
+      <ref role="PrY4T" node="1FYNzU$nG$p" resolve="IVariableInitializer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4$4X$jUDOXY">
+    <property role="EcuMT" value="5261601040799059838" />
+    <property role="TrG5h" value="CollectionInitializer" />
+    <property role="R4oN_" value="C# 12 collection initializer" />
+    <property role="3GE5qa" value="Initializers" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4$4X$jUDOXZ" role="1TKVEi">
+      <property role="IQ2ns" value="5261601040799059839" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="variableInitializer" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1FYNzU$nG$p" resolve="IVariableInitializer" />
+    </node>
+    <node concept="PrWs8" id="4$4X$jUDOY0" role="PzmwI">
+      <ref role="PrY4T" node="1FYNzU$nG$p" resolve="IVariableInitializer" />
+    </node>
+  </node>
 </model>
 
