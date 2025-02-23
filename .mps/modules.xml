@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/CsBaseLanguage.build/CsBaseLanguage.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CsBaseLanguage.sandbox/CsBaseLanguage.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CsBaseLanguage.tests/CsBaseLanguage.tests.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CsStdLib/CsStdLib.msd" folder="" />
     </projectModules>
   </component>
 </project>
