@@ -47,7 +47,7 @@
         <id>CsBaseLanguage</id>
         <name>CsBaseLanguage</name>
         <description>The C# base language for MPS</description>
-        <version>2024.1.0</version>
+        <version>2024.1.1-SNAPSHOT</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
@@ -258,7 +258,7 @@
         <id>CsBaseLanguage</id>
         <name>CsBaseLanguage</name>
         <description>The C# base language for MPS</description>
-        <version>2024.1.0</version>
+        <version>2024.1.1-SNAPSHOT</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
