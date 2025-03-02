@@ -23344,5 +23344,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2A7R_5S3cb_">
+    <property role="3GE5qa" value="Types" />
+    <ref role="1XX52x" to="80bi:2A7R_5S3c7Q" resolve="ObjectType" />
+    <node concept="3F0ifn" id="2A7R_5S3ccg" role="2wV5jI">
+      <property role="3F0ifm" value="object" />
+    </node>
+  </node>
 </model>
 

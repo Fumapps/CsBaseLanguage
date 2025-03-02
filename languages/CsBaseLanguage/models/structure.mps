@@ -4687,5 +4687,13 @@
       <ref role="PrY4T" node="1FYNzU$nG$p" resolve="IVariableInitializer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2A7R_5S3c7Q">
+    <property role="EcuMT" value="2992604918898803190" />
+    <property role="TrG5h" value="ObjectType" />
+    <property role="34LRSv" value="object" />
+    <property role="R4oN_" value="Object" />
+    <property role="3GE5qa" value="Types" />
+    <ref role="1TJDcQ" node="2HIntxMH_qO" resolve="BuiltInClassType" />
+  </node>
 </model>
 
