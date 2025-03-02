@@ -167,14 +167,22 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="WtQ9Q" id="2A7R_5S45Qj">
+  <node concept="WtQ9Q" id="2A7R_5SiSLb">
     <property role="3GE5qa" value="Types" />
-    <ref role="WuzLi" to="80bi:2A7R_5S3c7Q" resolve="ObjectType" />
-    <node concept="11bSqf" id="2A7R_5S45Qk" role="11c4hB">
-      <node concept="3clFbS" id="2A7R_5S45Ql" role="2VODD2">
-        <node concept="lc7rE" id="2A7R_5S45Qo" role="3cqZAp">
-          <node concept="la8eA" id="2A7R_5S45Qn" role="lcghm">
-            <property role="lacIc" value="object" />
+    <ref role="WuzLi" to="80bi:2A7R_5ShZUR" resolve="OptionalType" />
+    <node concept="11bSqf" id="2A7R_5SiSLc" role="11c4hB">
+      <node concept="3clFbS" id="2A7R_5SiSLd" role="2VODD2">
+        <node concept="lc7rE" id="2A7R_5SiSLm" role="3cqZAp">
+          <node concept="l9hG8" id="2A7R_5SiSLk" role="lcghm">
+            <node concept="2OqwBi" id="2A7R_5SiSLl" role="lb14g">
+              <node concept="117lpO" id="2A7R_5SiSLj" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2A7R_5SiSLg" role="2OqNvi">
+                <ref role="3Tt5mk" to="80bi:2A7R_5Si08S" resolve="nestedType" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2A7R_5SiSLE" role="lcghm">
+            <property role="lacIc" value="?" />
           </node>
         </node>
       </node>
@@ -27520,6 +27528,19 @@
           </node>
           <node concept="la8eA" id="5xrpOE7$8sn" role="lcghm">
             <property role="lacIc" value="}" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2A7R_5S45Qj">
+    <property role="3GE5qa" value="Types" />
+    <ref role="WuzLi" to="80bi:2A7R_5S3c7Q" resolve="ObjectType" />
+    <node concept="11bSqf" id="2A7R_5S45Qk" role="11c4hB">
+      <node concept="3clFbS" id="2A7R_5S45Ql" role="2VODD2">
+        <node concept="lc7rE" id="2A7R_5S45Qo" role="3cqZAp">
+          <node concept="la8eA" id="2A7R_5S45Qn" role="lcghm">
+            <property role="lacIc" value="object" />
           </node>
         </node>
       </node>

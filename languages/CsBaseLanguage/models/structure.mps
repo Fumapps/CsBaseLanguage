@@ -4695,5 +4695,20 @@
     <property role="3GE5qa" value="Types" />
     <ref role="1TJDcQ" node="2HIntxMH_qO" resolve="BuiltInClassType" />
   </node>
+  <node concept="1TIwiD" id="2A7R_5ShZUR">
+    <property role="EcuMT" value="2992604918902685367" />
+    <property role="TrG5h" value="OptionalType" />
+    <property role="34LRSv" value="?" />
+    <property role="3GE5qa" value="Types" />
+    <property role="R4oN_" value="optional type" />
+    <ref role="1TJDcQ" node="5VT83U$LuL9" resolve="BuiltInType" />
+    <node concept="1TJgyj" id="2A7R_5Si08S" role="1TKVEi">
+      <property role="IQ2ns" value="2992604918902686264" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5VT83U$LuL9" resolve="BuiltInType" />
+    </node>
+  </node>
 </model>
 

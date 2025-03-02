@@ -31,6 +31,9 @@
         <child id="7232527154588304251" name="namespaceMemberDeclaration" index="31LlDr" />
       </concept>
       <concept id="2992604918898803190" name="CsBaseLanguage.structure.ObjectType" flags="ng" index="1hyLYB" />
+      <concept id="2992604918902685367" name="CsBaseLanguage.structure.OptionalType" flags="ng" index="1hK23A">
+        <child id="2992604918902686264" name="nestedType" index="1hNXLD" />
+      </concept>
       <concept id="3129541975290303051" name="CsBaseLanguage.structure.VoidType" flags="ng" index="1pH0Yj" />
       <concept id="6365726834694825977" name="CsBaseLanguage.structure.ImplicitLocalVariableDeclarationStatement" flags="ng" index="1BvVOH">
         <child id="6365726834695689697" name="declaration" index="1BoGWP" />
@@ -125,9 +128,16 @@
               </node>
             </node>
           </node>
-          <node concept="31KRCQ" id="2A7R_5ShZAq" role="1ux1N" />
-          <node concept="31KRCQ" id="2A7R_5ShZJp" role="1ux1N" />
-          <node concept="31KRCQ" id="2A7R_5ShZt1" role="1ux1N" />
+          <node concept="2YDbI9" id="2A7R_5SsCzY" role="1ux1N">
+            <node concept="zF7EM" id="2A7R_5SsC$0" role="2YDbI4">
+              <property role="TrG5h" value="optionalBoolType" />
+            </node>
+            <node concept="3UfwP1" id="2A7R_5SsC$2" role="3SE38M">
+              <node concept="1hK23A" id="2A7R_5SsCDX" role="3UfBpY">
+                <node concept="3UfLA2" id="2A7R_5SsCEt" role="1hNXLD" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1ux1I" id="2A7R_5ShZpv" role="1fIg$P" />
         <node concept="1pH0Yj" id="2A7R_5ShZpw" role="3Sw9wT" />
