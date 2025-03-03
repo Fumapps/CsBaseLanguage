@@ -296,6 +296,44 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="4V5uMVt96eO" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="CsStdLib" />
+        <property role="3LESm3" value="0e5f29d3-1825-4400-ab4a-0a6f471d84b1" />
+        <node concept="55IIr" id="4V5uMVt96eR" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4V5uMVt96ge" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4V5uMVt96h_" role="2Ry0An">
+              <property role="2Ry0Am" value="CsStdLib" />
+              <node concept="2Ry0Ak" id="4V5uMVt96i4" role="2Ry0An">
+                <property role="2Ry0Am" value="CsStdLib.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4V5uMVt96iL" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4V5uMVt96iM" role="1HemKq">
+            <node concept="398BVA" id="4V5uMVt96iD" role="3LXTmr">
+              <ref role="398BVh" node="4h_5oU0U7hy" resolve="project_home" />
+              <node concept="2Ry0Ak" id="4V5uMVt96iE" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4V5uMVt96iF" role="2Ry0An">
+                  <property role="2Ry0Am" value="CsStdLib" />
+                  <node concept="2Ry0Ak" id="4V5uMVt96iG" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4V5uMVt96iN" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="61Tjqp0OspV" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="CsBaseLanguage.plugin" />

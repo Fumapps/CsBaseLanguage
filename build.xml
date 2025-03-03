@@ -174,6 +174,38 @@
       <zipfileset file="${basedir}/languages/CsBaseLanguage/CsBaseLanguage.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-CsBaseLanguage-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/CsStdLib.jar" />
+    <mkdir dir="${build.tmp}/default/CsStdLib.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/CsStdLib.jar/META-INF/module.xml">
+      <module namespace="CsStdLib" type="solution" uuid="0e5f29d3-1825-4400-ab4a-0a6f471d84b1">
+        <dependencies />
+        <uses>
+          <language id="l:d74e25c9-4d91-43b6-bad7-d18af7bf6674:CsBaseLanguage" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="CsStdLib-src.jar" descriptor="CsStdLib.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsStdLib.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/CsStdLib" />
+      <fileset dir="${project_home}/solutions/CsStdLib/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/CsStdLib.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-CsStdLib-models">
+      <fileset dir="${project_home}/solutions/CsStdLib/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/CsBaseLanguage/languages/CsBaseLanguage/CsStdLib-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/solutions/CsStdLib/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/CsStdLib/CsStdLib.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-CsStdLib-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar/META-INF" />
     <echoxml file="${build.tmp}/default/CsBaseLanguage.plugin.jar/META-INF/module.xml">
@@ -385,6 +417,38 @@
       <zipfileset file="${basedir}/languages/CsBaseLanguage/CsBaseLanguage.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-CsBaseLanguage-models1" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/CsStdLib.jar1" />
+    <mkdir dir="${build.tmp}/default/CsStdLib.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/CsStdLib.jar1/META-INF/module.xml">
+      <module namespace="CsStdLib" type="solution" uuid="0e5f29d3-1825-4400-ab4a-0a6f471d84b1">
+        <dependencies />
+        <uses>
+          <language id="l:d74e25c9-4d91-43b6-bad7-d18af7bf6674:CsBaseLanguage" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="CsStdLib-src.jar" descriptor="CsStdLib.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsStdLib.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/CsStdLib" />
+      <fileset dir="${project_home}/solutions/CsStdLib/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/CsStdLib.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-CsStdLib-models1">
+      <fileset dir="${project_home}/solutions/CsStdLib/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/CsBaseLanguage.zip/CsBaseLanguage/languages/CsBaseLanguage/CsStdLib-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/solutions/CsStdLib/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/CsStdLib/CsStdLib.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-CsStdLib-models1" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar1" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.plugin.jar1/META-INF" />
     <echoxml file="${build.tmp}/default/CsBaseLanguage.plugin.jar1/META-INF/module.xml">
@@ -476,7 +540,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.CsBaseLanguage, java.compile.CsBaseLanguage.plugin, java.compile.CsBaseLanguage.build" />
+  <target name="compileJava" depends="java.compile.CsBaseLanguage, java.compile.CsStdLib, java.compile.CsBaseLanguage.plugin, java.compile.CsBaseLanguage.build" />
   
   <target name="processResources" />
   
@@ -498,6 +562,9 @@
         <module file="${basedir}/languages/CsBaseLanguage/CsBaseLanguage.mpl" />
         <module file="${basedir}/solutions/CsBaseLanguage.build/CsBaseLanguage.build.msd" />
         <module file="${basedir}/solutions/CsBaseLanguage.plugin/CsBaseLanguage.plugin.msd" />
+      </chunk>
+      <chunk>
+        <module file="${basedir}/solutions/CsStdLib/CsStdLib.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -577,6 +644,21 @@
     </copy>
   </target>
   
+  <target name="java.compile.CsStdLib">
+    <mkdir dir="${project_home}/solutions/CsStdLib/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/CsStdLib" />
+    <javac destdir="${build.tmp}/java/out/CsStdLib" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${project_home}/solutions/CsStdLib/source_gen" />
+      </src>
+      <classpath />
+    </javac>
+    <copy todir="${build.tmp}/java/out/CsStdLib">
+      <fileset dir="${project_home}/solutions/CsStdLib/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
   <target name="java.compile.CsBaseLanguage.plugin" depends="fetchDependencies">
     <mkdir dir="${project_home}/solutions/CsBaseLanguage.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CsBaseLanguage.plugin" />
@@ -650,5 +732,6 @@
     <delete dir="${project_home}/languages/CsBaseLanguage/source_gen" />
     <delete dir="${project_home}/solutions/CsBaseLanguage.build/source_gen" />
     <delete dir="${project_home}/solutions/CsBaseLanguage.plugin/source_gen" />
+    <delete dir="${project_home}/solutions/CsStdLib/source_gen" />
   </target>
 </project>
