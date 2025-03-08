@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections.Generic)">
+<model ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections)">
   <persistence version="9" />
   <languages>
     <use id="d74e25c9-4d91-43b6-bad7-d18af7bf6674" name="CsBaseLanguage" version="4" />
@@ -36,6 +36,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -43,6 +46,7 @@
   </registry>
   <node concept="31LFg6" id="5xrpOE7zdFA">
     <property role="TrG5h" value="IList.cs" />
+    <property role="3GE5qa" value="Generic" />
     <node concept="31LijL" id="5xrpOE7zdIE" role="31LlDr">
       <property role="TrG5h" value="System.Collections.Generic" />
       <node concept="31LiCz" id="5xrpOE7zdK0" role="31LkaE">
@@ -55,6 +59,7 @@
   </node>
   <node concept="31LFg6" id="5xrpOE7zdMH">
     <property role="TrG5h" value="ICollection.cs" />
+    <property role="3GE5qa" value="Generic" />
     <node concept="31LijL" id="5xrpOE7zdMI" role="31LlDr">
       <property role="TrG5h" value="System.Collections.Generic" />
       <node concept="31LiCz" id="5xrpOE7zdMJ" role="31LkaE">
@@ -67,6 +72,7 @@
   </node>
   <node concept="31LFg6" id="5xrpOE7zdSv">
     <property role="TrG5h" value="List.cs" />
+    <property role="3GE5qa" value="Generic" />
     <node concept="31LijL" id="5xrpOE7zdSw" role="31LlDr">
       <property role="TrG5h" value="System.Collections.Generic" />
       <node concept="31LiCz" id="5xrpOE7zdSx" role="31LkaE">

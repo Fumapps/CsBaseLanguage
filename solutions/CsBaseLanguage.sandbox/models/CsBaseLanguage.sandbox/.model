@@ -6,7 +6,7 @@
     <use id="d74e25c9-4d91-43b6-bad7-d18af7bf6674" name="CsBaseLanguage" version="-1" />
   </languages>
   <imports>
-    <import index="xrxg" ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections.Generic)" />
+    <import index="xrxg" ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections)" />
   </imports>
 </model>
 
