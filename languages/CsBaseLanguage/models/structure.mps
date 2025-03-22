@@ -4710,5 +4710,23 @@
       <ref role="20lvS9" node="5VT83U$LuL9" resolve="BuiltInType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="XRXxa3nHyp">
+    <property role="EcuMT" value="1114629992171362457" />
+    <property role="3GE5qa" value="Expressions.New" />
+    <property role="TrG5h" value="NewWithInitializerExpression" />
+    <property role="34LRSv" value="new {}" />
+    <property role="R4oN_" value="create new instance with {} initializer" />
+    <ref role="1TJDcQ" node="5VT83U$Mjvs" resolve="PrimaryExpression" />
+    <node concept="1TJgyj" id="XRXxa3nHFd" role="1TKVEi">
+      <property role="IQ2ns" value="1114629992171363021" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="initializer" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4$4X$jUDOKl" resolve="LegacyCollectionInitializer" />
+    </node>
+    <node concept="PrWs8" id="XRXxa3nHys" role="PzmwI">
+      <ref role="PrY4T" node="1FYNzU$sHZz" resolve="IStatementExpression" />
+    </node>
+  </node>
 </model>
 
