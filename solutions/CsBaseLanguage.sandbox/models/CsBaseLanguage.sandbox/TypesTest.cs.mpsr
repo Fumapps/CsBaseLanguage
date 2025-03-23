@@ -67,7 +67,7 @@
     <node concept="31LiCz" id="2A7R_5ShZph" role="31LlDr">
       <property role="TrG5h" value="Literals" />
       <node concept="31KRCM" id="2A7R_5ShZpi" role="31Leeq">
-        <property role="TrG5h" value="testLiterals" />
+        <property role="TrG5h" value="testTypes" />
         <node concept="1ux1M" id="2A7R_5ShZpj" role="31KRCR">
           <node concept="2YDbI9" id="2A7R_5ShZx7" role="1ux1N">
             <node concept="zF7EM" id="2A7R_5ShZx9" role="2YDbI4">
