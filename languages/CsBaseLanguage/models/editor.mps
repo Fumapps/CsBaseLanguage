@@ -23375,12 +23375,6 @@
       <node concept="3F1sOY" id="XRXxa3nHMX" role="3EZMnx">
         <ref role="1NtTu8" to="80bi:XRXxa3nHFd" resolve="initializer" />
       </node>
-      <node concept="3F0ifn" id="XRXxa3nHLb" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="XRXxa3nHLc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
     </node>
   </node>
 </model>
