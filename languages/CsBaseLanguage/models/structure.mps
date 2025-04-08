@@ -4707,7 +4707,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5VT83U$LuL9" resolve="BuiltInType" />
+      <ref role="20lvS9" node="5_5a0KJX$kh" resolve="INonArrayType" />
     </node>
   </node>
   <node concept="1TIwiD" id="XRXxa3nHyp">
