@@ -4728,5 +4728,20 @@
       <ref role="PrY4T" node="1FYNzU$sHZz" resolve="IStatementExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="730uN985dcV">
+    <property role="EcuMT" value="8124629183664280379" />
+    <property role="3GE5qa" value="Expressions.(Un)checked" />
+    <property role="TrG5h" value="DefaultValueExpression" />
+    <property role="34LRSv" value="default()" />
+    <property role="R4oN_" value="default expression" />
+    <ref role="1TJDcQ" node="5VT83U$Mjvs" resolve="PrimaryExpression" />
+    <node concept="1TJgyj" id="730uN985doK" role="1TKVEi">
+      <property role="IQ2ns" value="8124629183664281136" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5_5a0KJX$kh" resolve="INonArrayType" />
+    </node>
+  </node>
 </model>
 

@@ -23377,5 +23377,33 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="730uN985dq5">
+    <property role="3GE5qa" value="Expressions.(Un)checked" />
+    <ref role="1XX52x" to="80bi:730uN985dcV" resolve="DefaultValueExpression" />
+    <node concept="3EZMnI" id="730uN985dqZ" role="2wV5jI">
+      <node concept="3F0ifn" id="730uN985dr3" role="3EZMnx">
+        <property role="3F0ifm" value="default" />
+      </node>
+      <node concept="3F0ifn" id="730uN985drY" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="730uN985dvB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="730uN985dwx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="730uN985dst" role="3EZMnx">
+        <ref role="1NtTu8" to="80bi:730uN985doK" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="730uN985dsW" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="730uN985duI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="730uN985dr2" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
