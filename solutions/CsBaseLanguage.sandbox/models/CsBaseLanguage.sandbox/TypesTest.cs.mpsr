@@ -17,6 +17,9 @@
       <concept id="7769220957754731518" name="CsBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM">
         <child id="3125407777189916705" name="initializer" index="1qY_RL" />
       </concept>
+      <concept id="8124629183664280379" name="CsBaseLanguage.structure.DefaultValueExpression" flags="ng" index="SPaw9">
+        <child id="8124629183664281136" name="type" index="SPaO2" />
+      </concept>
       <concept id="1945218857511318967" name="CsBaseLanguage.structure.LocalVariableDeclarationStatement" flags="ng" index="2YDbI9">
         <child id="1945218857511318970" name="variableDeclarator" index="2YDbI4" />
       </concept>
@@ -135,6 +138,17 @@
             <node concept="3UfwP1" id="2A7R_5SsC$2" role="3SE38M">
               <node concept="1hK23A" id="2A7R_5SsCDX" role="3UfBpY">
                 <node concept="3UfLA2" id="2A7R_5SsCEt" role="1hNXLD" />
+              </node>
+            </node>
+          </node>
+          <node concept="31KRCQ" id="730uN98eCLy" role="1ux1N" />
+          <node concept="1BvVOH" id="730uN98eCM0" role="1ux1N">
+            <node concept="2a_s8y" id="730uN98eCM2" role="1BoGWP">
+              <node concept="zF7EM" id="730uN98eCM4" role="2a_spH">
+                <property role="TrG5h" value="defaultValue" />
+                <node concept="SPaw9" id="730uN98eCNs" role="1qY_RL">
+                  <node concept="3UfM67" id="730uN98eCON" role="SPaO2" />
+                </node>
               </node>
             </node>
           </node>
