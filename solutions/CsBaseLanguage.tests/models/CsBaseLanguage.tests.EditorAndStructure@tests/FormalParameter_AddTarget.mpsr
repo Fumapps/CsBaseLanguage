@@ -83,7 +83,7 @@
       <concept id="7486903154347131566" name="CsBaseLanguage.structure.FormalParameterList" flags="ng" index="1ux1I">
         <child id="7486903154347131567" name="formalParameter" index="1ux1J" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
       <concept id="7232527154588476195" name="CsBaseLanguage.structure.FormalParameter" flags="ng" index="31KZC3">

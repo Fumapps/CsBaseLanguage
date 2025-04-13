@@ -34,7 +34,7 @@
       <concept id="7486903154347131535" name="CsBaseLanguage.structure.AttributeSection" flags="ng" index="1ux1f">
         <child id="7486903154347131536" name="attributeList" index="1ux1g" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
       <concept id="7232527154588300039" name="CsBaseLanguage.structure.EnumDeclaration" flags="ng" index="31LiCB">

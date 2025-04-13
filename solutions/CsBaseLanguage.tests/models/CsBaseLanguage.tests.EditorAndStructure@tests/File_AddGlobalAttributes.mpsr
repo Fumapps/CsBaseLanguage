@@ -31,7 +31,7 @@
       </concept>
     </language>
     <language id="d74e25c9-4d91-43b6-bad7-d18af7bf6674" name="CsBaseLanguage">
-      <concept id="7232527154588416719" name="CsBaseLanguage.structure.INamespaceMemberDeclaration" flags="ng" index="31LefJ" />
+      <concept id="7232527154588416719" name="CsBaseLanguage.structure.INamespaceMemberDeclaration" flags="ngI" index="31LefJ" />
       <concept id="7232527154588316420" name="CsBaseLanguage.structure.Attribute" flags="ng" index="31LmC$">
         <child id="7110811360838812413" name="attributeClass" index="1DcEYZ" />
       </concept>

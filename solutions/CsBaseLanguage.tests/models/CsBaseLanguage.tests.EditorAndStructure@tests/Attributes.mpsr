@@ -56,10 +56,10 @@
         <child id="7110811360838812413" name="attributeClass" index="1DcEYZ" />
       </concept>
       <concept id="6179718927864463913" name="CsBaseLanguage.structure.AttributeClassReference" flags="ng" index="36R4uQ" />
-      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ng" index="3SE3Ww">
+      <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
         <child id="6209812394072707161" name="iModifier" index="3SE3Wx" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190981614" name="CsBaseLanguage.structure.IntLiteral" flags="ng" index="3UcVBg">
@@ -105,7 +105,7 @@
     <node concept="1qefOq" id="2KItQQV7act" role="1SKRRt">
       <node concept="31LmC$" id="2KItQQV7acv" role="1qenE9">
         <node concept="36R4uQ" id="2KItQQV7acw" role="1DcEYZ">
-          <ref role="2Gaslz" node="2KItQQV7acz" />
+          <ref role="2Gaslz" node="2KItQQV7acz" resolve="FooAttribute" />
         </node>
         <node concept="xJLN9" id="AKP4wCe5tx" role="6Ane7">
           <node concept="6tz2q" id="AKP4wCyeBT" role="xJLNb">
@@ -114,7 +114,7 @@
             </node>
           </node>
           <node concept="6tzi2" id="AKP4wCyeBV" role="xJLNb">
-            <ref role="6tzNi" node="2KItQQV7acC" />
+            <ref role="6tzNi" node="2KItQQV7acC" resolve="Property" />
             <node concept="3UcVBg" id="6oIHlJhpyGn" role="6tzT3">
               <property role="1pzoAX" value="2" />
             </node>

@@ -32,11 +32,11 @@
       <concept id="7769220957754731518" name="CsBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM">
         <child id="3125407777189916705" name="initializer" index="1qY_RL" />
       </concept>
-      <concept id="1945218857511602457" name="CsBaseLanguage.structure.IVariableInitializer" flags="ng" index="2YC0sB" />
+      <concept id="1945218857511602457" name="CsBaseLanguage.structure.IVariableInitializer" flags="ngI" index="2YC0sB" />
       <concept id="1945218857511318967" name="CsBaseLanguage.structure.LocalVariableDeclarationStatement" flags="ng" index="2YDbI9">
         <child id="1945218857511318970" name="variableDeclarator" index="2YDbI4" />
       </concept>
-      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ng" index="3SE3W$">
+      <concept id="6209812394072707164" name="CsBaseLanguage.structure.IHaveType" flags="ngI" index="3SE3W$">
         <child id="6209812394072710474" name="type" index="3SE38M" />
       </concept>
       <concept id="6843536562190902679" name="CsBaseLanguage.structure.ArrayInitializer" flags="ng" index="3Uc4mD" />
