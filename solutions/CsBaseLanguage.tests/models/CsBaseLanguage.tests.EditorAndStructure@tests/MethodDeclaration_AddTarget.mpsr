@@ -84,10 +84,10 @@
       <concept id="7486903154347131570" name="CsBaseLanguage.structure.Block" flags="ng" index="1ux1M">
         <child id="7486903154347131571" name="statement" index="1ux1N" />
       </concept>
-      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ng" index="7amQ3">
+      <concept id="8922781889383463769" name="CsBaseLanguage.structure.IHasAttributes" flags="ngI" index="7amQ3">
         <child id="8922781889383463860" name="attributeSections" index="7amPI" />
       </concept>
-      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ng" index="2qBh2l">
+      <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ngI" index="2qBh2l">
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
       <concept id="7232527154588443410" name="CsBaseLanguage.structure.MethodDeclaration" flags="ng" index="31KRCM">
@@ -105,7 +105,7 @@
       <concept id="7110811360843584256" name="CsBaseLanguage.structure.AttributeTargetSpecifier" flags="ng" index="1DiBT2">
         <property id="7110811360843584587" name="value" index="1DiB$9" />
       </concept>
-      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ng" index="3Sw9wS">
+      <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
     </language>

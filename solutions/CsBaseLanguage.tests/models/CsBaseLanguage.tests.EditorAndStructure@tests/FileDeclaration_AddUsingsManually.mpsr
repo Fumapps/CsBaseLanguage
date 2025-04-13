@@ -52,7 +52,7 @@
         <child id="3126865292760098556" name="reference" index="2g4BQm" />
       </concept>
       <concept id="2439281069887047993" name="CsBaseLanguage.structure.NotGenericParameterTypeReference" flags="ng" index="2Gatwc" />
-      <concept id="7232527154588416719" name="CsBaseLanguage.structure.INamespaceMemberDeclaration" flags="ng" index="31LefJ" />
+      <concept id="7232527154588416719" name="CsBaseLanguage.structure.INamespaceMemberDeclaration" flags="ngI" index="31LefJ" />
       <concept id="7232527154588265766" name="CsBaseLanguage.structure.File" flags="ng" index="31LFg6">
         <child id="7232527154588304251" name="namespaceMemberDeclaration" index="31LlDr" />
       </concept>

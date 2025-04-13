@@ -4450,7 +4450,7 @@
         <property role="3F0ifm" value="parent reference:" />
       </node>
       <node concept="PMmxH" id="5xrpOE7nCRs" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
       </node>
     </node>
   </node>
@@ -6735,7 +6735,7 @@
     <ref role="1XX52x" to="80bi:1HkqSaCLgiU" resolve="GenericTypeParameterReferenceString" />
     <node concept="3EZMnI" id="1HkqSaCLqlJ" role="2wV5jI">
       <node concept="PMmxH" id="6WVfcZm37P4" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
         <node concept="pkWqt" id="6WVfcZm37Un" role="pqm2j">
           <node concept="3clFbS" id="6WVfcZm37Uo" role="2VODD2">
             <node concept="3clFbF" id="6WVfcZm37Up" role="3cqZAp">
@@ -7038,7 +7038,7 @@
     <ref role="1XX52x" to="80bi:27q4jmdWW$T" resolve="NotGenericParameterTypeReference" />
     <node concept="3EZMnI" id="27q4jmdX2CU" role="2wV5jI">
       <node concept="PMmxH" id="27q4jmdX2DK" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
         <node concept="pkWqt" id="27q4jmdX2DL" role="pqm2j">
           <node concept="3clFbS" id="27q4jmdX2DM" role="2VODD2">
             <node concept="3clFbF" id="27q4jmdX2DN" role="3cqZAp">
@@ -7174,7 +7174,7 @@
         <property role="3F0ifm" value="parent reference:" />
       </node>
       <node concept="PMmxH" id="5xrpOE7nDi2" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
       </node>
     </node>
   </node>
@@ -7294,7 +7294,7 @@
           <property role="3F0ifm" value="anotherMemberReference" />
         </node>
         <node concept="3F1sOY" id="6RZuJwq_Ev6" role="3EZMnx">
-          <ref role="1NtTu8" to="80bi:6K3cc7ATVj_" />
+          <ref role="1NtTu8" to="80bi:6K3cc7ATVj_" resolve="anotherMemberReference" />
         </node>
         <node concept="pkWqt" id="6RZuJwq_Ev7" role="pqm2j">
           <node concept="3clFbS" id="6RZuJwq_Ev8" role="2VODD2">
@@ -7303,7 +7303,7 @@
                 <node concept="2OqwBi" id="6RZuJwq_Evb" role="2Oq$k0">
                   <node concept="pncrf" id="6RZuJwq_Evc" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6RZuJwq_Evd" role="2OqNvi">
-                    <ref role="3Tt5mk" to="80bi:6K3cc7ATVj_" />
+                    <ref role="3Tt5mk" to="80bi:6K3cc7ATVj_" resolve="anotherMemberReference" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="6RZuJwq_Eve" role="2OqNvi" />
@@ -7336,7 +7336,7 @@
         <property role="3F0ifm" value="parent reference:" />
       </node>
       <node concept="PMmxH" id="5xrpOE7nDXL" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
       </node>
     </node>
   </node>
@@ -22986,7 +22986,7 @@
     <ref role="1XX52x" to="80bi:5n2LpYj7C8D" resolve="AttributeClassReference" />
     <node concept="3EZMnI" id="5n2LpYj7Dre" role="2wV5jI">
       <node concept="PMmxH" id="5n2LpYj7Dri" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
         <node concept="pkWqt" id="5n2LpYj7Drj" role="pqm2j">
           <node concept="3clFbS" id="5n2LpYj7Drk" role="2VODD2">
             <node concept="3clFbF" id="5n2LpYj7Drl" role="3cqZAp">
@@ -23020,7 +23020,7 @@
         <property role="3F0ifm" value="parent reference:" />
       </node>
       <node concept="PMmxH" id="5xrpOE7nDUg" role="3EZMnx">
-        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference" />
+        <ref role="PMmxG" node="27q4jmdWZQF" resolve="ParentReference_EC" />
       </node>
     </node>
   </node>
@@ -23266,7 +23266,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="395HxsZsfYE" role="3EZMnx">
-        <ref role="1NtTu8" to="80bi:395HxsZsfYl" />
+        <ref role="1NtTu8" to="80bi:395HxsZsfYl" resolve="lines" />
         <node concept="2iRkQZ" id="pfxAubDTbD" role="2czzBx" />
         <node concept="2SqB2G" id="CpmIBWlHaa" role="2SqHTX">
           <property role="TrG5h" value="noIndentTextGenGen" />
@@ -23300,7 +23300,7 @@
       <node concept="l2Vlx" id="4$4X$jUDP5v" role="2iSdaV" />
       <node concept="3F2HdR" id="4$4X$jUDP5w" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="80bi:4$4X$jUDOXZ" />
+        <ref role="1NtTu8" to="80bi:4$4X$jUDOXZ" resolve="variableInitializer" />
         <node concept="l2Vlx" id="4$4X$jUDP5x" role="2czzBx" />
         <node concept="3F0ifn" id="4$4X$jUDP5y" role="2czzBI">
           <property role="3F0ifm" value="" />
@@ -23333,7 +23333,7 @@
       <node concept="l2Vlx" id="4$4X$jUDPa0" role="2iSdaV" />
       <node concept="3F2HdR" id="4$4X$jUDPa1" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="80bi:4$4X$jUDOKm" />
+        <ref role="1NtTu8" to="80bi:4$4X$jUDOKm" resolve="variableInitializer" />
         <node concept="l2Vlx" id="4$4X$jUDPa2" role="2czzBx" />
         <node concept="3F0ifn" id="4$4X$jUDPa3" role="2czzBI">
           <property role="3F0ifm" value="" />
