@@ -30,10 +30,15 @@
       <concept id="7232527154588300035" name="CsBaseLanguage.structure.ClassDeclaration" flags="ng" index="31LiCz">
         <child id="7232527154588416698" name="classMemberDeclaration" index="31Leeq" />
       </concept>
+      <concept id="7232527154588300038" name="CsBaseLanguage.structure.InterfaceDeclaration" flags="ng" index="31LiCA">
+        <child id="7575174424947101368" name="interfaceMemberDeclaration" index="1fIeeT" />
+      </concept>
       <concept id="7232527154588265766" name="CsBaseLanguage.structure.File" flags="ng" index="31LFg6">
         <child id="7232527154588304251" name="namespaceMemberDeclaration" index="31LlDr" />
       </concept>
+      <concept id="7575174424947155903" name="CsBaseLanguage.structure.InterfaceMethodDeclaration" flags="ng" index="1fIgUY" />
       <concept id="2992604918898803190" name="CsBaseLanguage.structure.ObjectType" flags="ng" index="1hyLYB" />
+      <concept id="3129541975290303051" name="CsBaseLanguage.structure.VoidType" flags="ng" index="1pH0Yj" />
       <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
@@ -150,6 +155,20 @@
             <node concept="3UfNVn" id="3szbYByGd_c" role="3UfBpY" />
           </node>
           <node concept="2qAx6t" id="3szbYByGdyy" role="3SE3Wx" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="31LFg6" id="yIFSV1gmtL">
+    <property role="TrG5h" value="IDispose.cs" />
+    <node concept="31LijL" id="yIFSV1gmtN" role="31LlDr">
+      <property role="TrG5h" value="System" />
+      <node concept="31LiCA" id="yIFSV1gmtP" role="31LkaE">
+        <property role="TrG5h" value="IDisposable" />
+        <node concept="1fIgUY" id="yIFSV1gmtQ" role="1fIeeT">
+          <property role="TrG5h" value="Dispose" />
+          <node concept="1ux1I" id="yIFSV1gmtR" role="1fIg$P" />
+          <node concept="1pH0Yj" id="yIFSV1gmtT" role="3Sw9wT" />
         </node>
       </node>
     </node>
