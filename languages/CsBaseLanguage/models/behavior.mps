@@ -2734,7 +2734,7 @@
             <property role="TrG5h" value="folderPath" />
             <node concept="17QB3L" id="6gtLKeWAZHJ" role="1tU5fm" />
             <node concept="BsUDl" id="6gtLKeWAZIO" role="33vP2m">
-              <ref role="37wK5l" node="6gtLKeWAVNp" />
+              <ref role="37wK5l" node="6gtLKeWAVNp" resolve="getFolderPath" />
             </node>
           </node>
         </node>
