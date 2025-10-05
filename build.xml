@@ -28,9 +28,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <fileset dir="${artifacts.mps}/lib">
-      <include name="util-8.jar" />
-    </fileset>
+    <pathelement location="${artifacts.mps}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
@@ -43,12 +41,12 @@
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.jar" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.jar/META-INF" />
     <echoxml file="${build.tmp}/default/CsBaseLanguage.jar/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin>
         <id>CsBaseLanguage</id>
         <name>CsBaseLanguage</name>
         <description>The C# base language for MPS</description>
-        <version>2025.1.0</version>
-        <depends>com.intellij.modules.platform</depends>
+        <version>2025.2.0</version>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         
@@ -286,12 +284,12 @@
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.jar2" />
     <mkdir dir="${build.tmp}/default/CsBaseLanguage.jar2/META-INF" />
     <echoxml file="${build.tmp}/default/CsBaseLanguage.jar2/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin>
         <id>CsBaseLanguage</id>
         <name>CsBaseLanguage</name>
         <description>The C# base language for MPS</description>
-        <version>2025.1.0</version>
-        <depends>com.intellij.modules.platform</depends>
+        <version>2025.2.0</version>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         
@@ -554,8 +552,10 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <chunk>
@@ -629,7 +629,6 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -637,7 +636,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/CsBaseLanguage">
@@ -705,7 +703,6 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       </classpath>
     </javac>
