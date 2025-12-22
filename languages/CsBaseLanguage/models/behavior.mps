@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -179,15 +179,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes">
@@ -1453,9 +1449,45 @@
         <node concept="3cpWs6" id="27q4jmdXlrf" role="3cqZAp" />
       </node>
       <node concept="P$JXv" id="4KhT7h9mIuV" role="lGtFl">
-        <node concept="TZ5HA" id="4KhT7h9mIuW" role="TZ5H$">
-          <node concept="1dT_AC" id="4KhT7h9mIuX" role="1dT_Ay">
-            <property role="1dT_AB" value="Automatically fills the parent types according to the parents of the referenced declaration." />
+        <node concept="1PaTwC" id="7mBQI0He1bj" role="1Vez_I">
+          <node concept="3oM_SD" id="7mBQI0He1bk" role="1PaTwD">
+            <property role="3oM_SC" value="Automatically" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bl" role="1PaTwD">
+            <property role="3oM_SC" value="fills" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bm" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bn" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bo" role="1PaTwD">
+            <property role="3oM_SC" value="types" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bp" role="1PaTwD">
+            <property role="3oM_SC" value="according" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bq" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1br" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bs" role="1PaTwD">
+            <property role="3oM_SC" value="parents" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bt" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bu" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bv" role="1PaTwD">
+            <property role="3oM_SC" value="referenced" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bw" role="1PaTwD">
+            <property role="3oM_SC" value="declaration." />
           </node>
         </node>
       </node>
@@ -1519,9 +1551,36 @@
         </node>
       </node>
       <node concept="P$JXv" id="4KhT7h9mIuE" role="lGtFl">
-        <node concept="TZ5HA" id="4KhT7h9mIuF" role="TZ5H$">
-          <node concept="1dT_AC" id="4KhT7h9mIuG" role="1dT_Ay">
-            <property role="1dT_AB" value="Moves this TypeReference into its parent and empties this TypeReference." />
+        <node concept="1PaTwC" id="7mBQI0He1bx" role="1Vez_I">
+          <node concept="3oM_SD" id="7mBQI0He1by" role="1PaTwD">
+            <property role="3oM_SC" value="Moves" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bz" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1b$" role="1PaTwD">
+            <property role="3oM_SC" value="TypeReference" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1b_" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bA" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bB" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bC" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bD" role="1PaTwD">
+            <property role="3oM_SC" value="empties" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bE" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bF" role="1PaTwD">
+            <property role="3oM_SC" value="TypeReference." />
           </node>
         </node>
       </node>
@@ -1539,9 +1598,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="4KhT7h9nqSh" role="lGtFl">
-        <node concept="TZ5HA" id="4KhT7h9nqSi" role="TZ5H$">
-          <node concept="1dT_AC" id="4KhT7h9nqSj" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns a new empty TypeReference of the concrete subclass of TypeReference." />
+        <node concept="1PaTwC" id="7mBQI0He1bG" role="1Vez_I">
+          <node concept="3oM_SD" id="7mBQI0He1bH" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bI" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bJ" role="1PaTwD">
+            <property role="3oM_SC" value="new" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bK" role="1PaTwD">
+            <property role="3oM_SC" value="empty" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bL" role="1PaTwD">
+            <property role="3oM_SC" value="TypeReference" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bM" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bO" role="1PaTwD">
+            <property role="3oM_SC" value="concrete" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bP" role="1PaTwD">
+            <property role="3oM_SC" value="subclass" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bQ" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bR" role="1PaTwD">
+            <property role="3oM_SC" value="TypeReference." />
           </node>
         </node>
       </node>
@@ -1606,14 +1695,77 @@
         </node>
       </node>
       <node concept="P$JXv" id="4KhT7h9nmGs" role="lGtFl">
-        <node concept="TZ5HA" id="4KhT7h9nmGt" role="TZ5H$">
-          <node concept="1dT_AC" id="4KhT7h9nmGu" role="1dT_Ay">
-            <property role="1dT_AB" value="Moves the whole hierarchy one level higher so that this TypeReference becomes empty, a subtype reference" />
+        <node concept="1PaTwC" id="7mBQI0He1bS" role="1Vez_I">
+          <node concept="3oM_SD" id="7mBQI0He1bT" role="1PaTwD">
+            <property role="3oM_SC" value="Moves" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bV" role="1PaTwD">
+            <property role="3oM_SC" value="whole" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bW" role="1PaTwD">
+            <property role="3oM_SC" value="hierarchy" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bX" role="1PaTwD">
+            <property role="3oM_SC" value="one" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bY" role="1PaTwD">
+            <property role="3oM_SC" value="level" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1bZ" role="1PaTwD">
+            <property role="3oM_SC" value="higher" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c0" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c1" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c2" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c3" role="1PaTwD">
+            <property role="3oM_SC" value="TypeReference" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c4" role="1PaTwD">
+            <property role="3oM_SC" value="becomes" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c5" role="1PaTwD">
+            <property role="3oM_SC" value="empty," />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c6" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c7" role="1PaTwD">
+            <property role="3oM_SC" value="subtype" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1c8" role="1PaTwD">
+            <property role="3oM_SC" value="reference" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4KhT7h9nmHt" role="TZ5H$">
-          <node concept="1dT_AC" id="4KhT7h9nmHu" role="1dT_Ay">
-            <property role="1dT_AB" value="of the original reference in this object." />
+        <node concept="1PaTwC" id="7mBQI0He1c9" role="1Vez_I">
+          <node concept="3oM_SD" id="7mBQI0He1ca" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cb" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cc" role="1PaTwD">
+            <property role="3oM_SC" value="original" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cd" role="1PaTwD">
+            <property role="3oM_SC" value="reference" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1ce" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cf" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cg" role="1PaTwD">
+            <property role="3oM_SC" value="object." />
           </node>
         </node>
       </node>
@@ -1634,13 +1786,72 @@
         </node>
       </node>
       <node concept="P$JXv" id="4tlNOo98aHc" role="lGtFl">
-        <node concept="TZ5HA" id="4tlNOo98aHd" role="TZ5H$">
-          <node concept="1dT_AC" id="4tlNOo98aHe" role="1dT_Ay">
-            <property role="1dT_AB" value="Controls whether the AddGenericParameterListSection menu is applicable to this reference." />
+        <node concept="x79VA" id="4tlNOo98aHf" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="7mBQI0He1cs" role="1Vez_I">
+            <node concept="3oM_SD" id="7mBQI0He1ct" role="1PaTwD">
+              <property role="3oM_SC" value="True" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cu" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cv" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cw" role="1PaTwD">
+              <property role="3oM_SC" value="reference" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cx" role="1PaTwD">
+              <property role="3oM_SC" value="points" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cy" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cz" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1c$" role="1PaTwD">
+              <property role="3oM_SC" value="generic" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1c_" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
+            <node concept="3oM_SD" id="7mBQI0He1cA" role="1PaTwD">
+              <property role="3oM_SC" value="declaration." />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="4tlNOo98aHf" role="3nqlJM">
-          <property role="x79VB" value="True if this reference points to a generic type declaration." />
+        <node concept="1PaTwC" id="7mBQI0He1ch" role="1Vez_I">
+          <node concept="3oM_SD" id="7mBQI0He1ci" role="1PaTwD">
+            <property role="3oM_SC" value="Controls" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cj" role="1PaTwD">
+            <property role="3oM_SC" value="whether" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1ck" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cl" role="1PaTwD">
+            <property role="3oM_SC" value="AddGenericParameterListSection" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cm" role="1PaTwD">
+            <property role="3oM_SC" value="menu" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cn" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1co" role="1PaTwD">
+            <property role="3oM_SC" value="applicable" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cp" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cq" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="7mBQI0He1cr" role="1PaTwD">
+            <property role="3oM_SC" value="reference." />
+          </node>
         </node>
       </node>
     </node>

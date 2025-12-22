@@ -45,7 +45,7 @@
         <id>CsBaseLanguage</id>
         <name>CsBaseLanguage</name>
         <description>The C# base language for MPS</description>
-        <version>2025.2.0</version>
+        <version>2025.3.0</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
@@ -288,7 +288,7 @@
         <id>CsBaseLanguage</id>
         <name>CsBaseLanguage</name>
         <description>The C# base language for MPS</description>
-        <version>2025.2.0</version>
+        <version>2025.3.0</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
@@ -569,7 +569,6 @@
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
-        <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="project_home" path="${project_home}" />
       <macro name="mps_home" path="${mps_home}" />
