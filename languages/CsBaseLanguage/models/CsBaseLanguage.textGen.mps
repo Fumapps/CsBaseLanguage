@@ -12,6 +12,9 @@
     <import index="kvwr" ref="r:87569a15-2e04-4705-b4d1-423b59bfb8a0(CsBaseLanguage.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -120,7 +123,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -4214,7 +4216,7 @@
         <node concept="3clFbF" id="7PwcgHUs62h" role="3cqZAp">
           <node concept="2OqwBi" id="7PwcgHUs62i" role="3clFbG">
             <node concept="117lpO" id="7PwcgHUs62j" role="2Oq$k0" />
-            <node concept="2qgKlT" id="7PwcgHUs62k" role="2OqNvi">
+            <node concept="3zqWPK" id="1FHEkVujpnH" role="2OqNvi">
               <ref role="37wK5l" to="kvwr:7PwcgHUrYG_" resolve="getFolderPathWithModel" />
             </node>
           </node>
@@ -25724,7 +25726,7 @@
                               <ref role="3Tt5mk" to="80bi:7HmXimPhNc5" resolve="signature" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="2Yw$_QFIcg_" role="2OqNvi">
+                          <node concept="3zqWPK" id="1FHEkVujpnJ" role="2OqNvi">
                             <ref role="37wK5l" to="kvwr:iSyfcw7Tst" resolve="needsParentheses" />
                           </node>
                         </node>
@@ -25830,7 +25832,7 @@
                           <ref role="3Tt5mk" to="80bi:7HmXimPhNc5" resolve="signature" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="2Yw$_QFIchM" role="2OqNvi">
+                      <node concept="3zqWPK" id="1FHEkVujpnL" role="2OqNvi">
                         <ref role="37wK5l" to="kvwr:iSyfcw7Tst" resolve="needsParentheses" />
                       </node>
                     </node>
@@ -26033,7 +26035,7 @@
                             <ref role="3Tt5mk" to="80bi:7HmXimPhNc5" resolve="signature" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="2Yw$_QFIckU" role="2OqNvi">
+                        <node concept="3zqWPK" id="1FHEkVujpnN" role="2OqNvi">
                           <ref role="37wK5l" to="kvwr:iSyfcw7Tst" resolve="needsParentheses" />
                         </node>
                       </node>
@@ -26111,7 +26113,7 @@
                             <ref role="3Tt5mk" to="80bi:7HmXimPhNc5" resolve="signature" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="2Yw$_QFIclG" role="2OqNvi">
+                        <node concept="3zqWPK" id="1FHEkVujpnP" role="2OqNvi">
                           <ref role="37wK5l" to="kvwr:iSyfcw7Tst" resolve="needsParentheses" />
                         </node>
                       </node>
